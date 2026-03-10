@@ -1,0 +1,22 @@
+#parm ../../../../abeta_linear.parm7
+#trajin ../T[2-5]/remd.287K.mdcrd
+#
+#secstruct :1-42 out dssp2-5.dat sumout dssp_summary_2-5.dat
+#go
+#
+#clear all
+#
+#parm ../../../../abeta_linear.parm7
+#trajin ../T[6-9]/remd.287K.mdcrd
+#trajin ../T??/remd.287K.mdcrd
+#
+#secstruct :1-42 out dssp6-10.dat sumout dssp_summary_6-10.dat
+#go
+#clear all
+
+parm ../../../../abeta_linear.parm7
+trajin ../T?/allT/remd.nc.1
+trajin ../T??/allT/remd.nc.1
+
+secstruct :1-42 out dssp.dat sumout dssp_summary.dat
+
