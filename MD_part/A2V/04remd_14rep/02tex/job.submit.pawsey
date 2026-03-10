@@ -1,0 +1,61 @@
+#!/bin/bash
+
+
+for i in {11..20}
+do
+
+let pre=`expr $i - 1`
+let nxt=`expr $i + 1`
+
+cat > run.prod.cpu.`printf "%02d" $i` <<-EOF
+#!/bin/bash --login
+
+
+#SBATCH --partition=work
+#SBATCH --time=24:00:00
+#SBATCH --mem=48GB
+#SBATCH --nodes=3
+#SBATCH --ntasks-per-node=112
+#SBATCH --cpus-per-task=1
+#SBATCH --account=pawsey0391     #IMPORTANT: use your own project and the -gpu suffix
+#SBATCH --export=NONE
+
+##module load cuda/12.0.0
+module load amber/2024
+
+if [ -f groupfile ];
+then
+  rm groupfile
+fi
+
+if [ -f remd.groupfile ];
+then
+  rm remd.groupfile
+fi
+
+nrep=\`wc ../temperatures.dat | awk '{print \$1}'\`
+echo \$nrep
+count=0
+for TEMP in \`cat ../temperatures.dat\`
+do
+  let COUNT+=1
+  REP=\`printf "%03d" \$COUNT\`
+  echo "TEMPERATURE: \$TEMP K ==> FILE: remd.mdin.\$REP"
+  sed "s/XXXXX/\$TEMP/g" REMD.RST.mdin > temp
+  sed "s/RANDOM_NUMBER/\$RANDOM/g" temp > remd.mdin.\$REP
+  echo "-O -rem 1 -remlog rem$i.log -i remd.mdin.\$REP -o remd$i.mdout.\$REP -c remd${pre}.rst.\$REP -r remd$i.rst.\$REP -x remd$i.mdcrd.\$REP -inf remd$i.mdinfo.\$REP -p ../../abeta_linear.parm7" >> remd.groupfile
+  
+  rm -f temp
+done
+echo "#" >> groupfile
+
+echo "N REPLICAS  = \$nrep"
+echo " Done."
+
+srun pmemd.MPI -ng 14 -groupfile remd.groupfile
+
+sbatch run.prod.cpu.`printf "%02d" $nxt`
+EOF
+
+
+done

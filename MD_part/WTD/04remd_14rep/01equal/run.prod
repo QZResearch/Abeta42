@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#PBS -l walltime=24:00:00
+#PBS -l mem=50000MB
+#PBS -q normal
+#PBS -l ncpus=336
+#PBS -l software=amber
+#PBS -l storage=gdata/eh83+scratch/eh83
+#PBS -l wd
+#PBS -P eh83
+
+# Running production steps
+##module load cuda/12.0.0
+module load amber/22
+
+mpirun -np 336 pmemd.MPI -ng 14 -groupfile equilibrate.groupfile
+

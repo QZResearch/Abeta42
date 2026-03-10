@@ -1,0 +1,63 @@
+#!/bin/bash
+
+
+for i in {11..14}
+do
+
+let pre=`expr $i - 1`
+let nxt=`expr $i + 1`
+
+cat > run.prod.cpu.`printf "%02d" $i` <<-EOF
+#!/bin/bash
+
+#PBS -l walltime=48:00:00
+#PBS -l mem=50000MB
+#PBS -q normal
+#PBS -l ncpus=336
+#PBS -l software=amber
+#PBS -l storage=gdata/eh83+scratch/eh83
+#PBS -l wd
+#PBS -P v15
+
+# Running production steps
+##module load cuda/12.0.0
+module load amber/22
+
+
+
+if [ -f groupfile ];
+then
+  rm groupfile
+fi
+
+if [ -f remd.groupfile ];
+then
+  rm remd.groupfile
+fi
+
+nrep=\`wc ../temperatures.dat | awk '{print \$1}'\`
+echo \$nrep
+count=0
+for TEMP in \`cat ../temperatures.dat\`
+do
+  let COUNT+=1
+  REP=\`printf "%03d" \$COUNT\`
+  echo "TEMPERATURE: \$TEMP K ==> FILE: remd.mdin.\$REP"
+  sed "s/XXXXX/\$TEMP/g" REMD.RST.mdin > temp
+  sed "s/RANDOM_NUMBER/\$RANDOM/g" temp > remd.mdin.\$REP
+  echo "-O -rem 1 -remlog rem$i.log -i remd.mdin.\$REP -o remd$i.mdout.\$REP -c remd${pre}.rst.\$REP -r remd$i.rst.\$REP -x remd$i.mdcrd.\$REP -inf remd$i.mdinfo.\$REP -p ../../abeta_linear.parm7" >> remd.groupfile
+  
+  rm -f temp
+done
+echo "#" >> groupfile
+
+echo "N REPLICAS  = \$nrep"
+echo " Done."
+
+mpirun -np 336 pmemd.MPI -ng 14 -groupfile remd.groupfile
+
+qsub run.prod.cpu.`printf "%02d" $nxt`
+EOF
+
+
+done

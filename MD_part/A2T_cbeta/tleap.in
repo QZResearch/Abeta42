@@ -1,0 +1,21 @@
+source oldff/leaprc.ff99SB
+source leaprc.water.tip4pew
+
+set default PBRadii mbondi3
+
+#abeta = sequence { 
+#NASP VAL GLU PHE ARG HIS ASP SER GLY TYR GLU VAL HIS HIS GLN LYS LEU VAL PHE PHE ALA GLU ASP VAL GLY SER ASN LYS GLY ALA ILE ILE GLY LEU MET VAL GLY GLY VAL VAL ILE CALA
+#}
+
+abeta = loadpdb abeta_A2T_Cb_chirality.pdb
+
+#list
+
+#solvatebox abeta TIP4PEWBOX 20.0 iso
+
+#desc abeta
+
+#savepdb abeta abeta_linear.pdb
+saveamberparm abeta abeta_linear.parm7 abeta_linear.inpcrd
+
+quit

@@ -1,0 +1,404 @@
+#
+#  chirality for residue 1 atoms:  CA CG HB2 HB3
+ &rst iat=5,10,8,9, 
+   r1=10., r2=60., r3=80., r4=130., rk2 = 10., rk3=10.,  &end
+#
+#  chirality for residue 1 atoms:  N C HA CB
+ &rst iat=1,13,6,7, &end
+#
+#  chirality for residue 2 atoms:  CA CG1 CG2 HB
+ &rst iat=17,21,25,20, &end
+#
+#  chirality for residue 2 atoms:  N C HA CB
+ &rst iat=15,29,18,19, &end
+#
+#  chirality for residue 3 atoms:  CA CG HB2 HB3
+ &rst iat=33,38,36,37, &end
+#
+#  chirality for residue 3 atoms:  CB CD HG2 HG3
+ &rst iat=35,41,39,40, &end
+#
+#  chirality for residue 3 atoms:  N C HA CB
+ &rst iat=31,44,34,35, &end
+#
+#  chirality for residue 4 atoms:  CA CG HB2 HB3
+ &rst iat=48,53,51,52, &end
+#
+#  chirality for residue 4 atoms:  N C HA CB
+ &rst iat=46,64,49,50, &end
+#
+#  chirality for residue 5 atoms:  CA CG HB2 HB3
+ &rst iat=68,73,71,72, &end
+#
+#  chirality for residue 5 atoms:  CB CD HG2 HG3
+ &rst iat=70,76,74,75, &end
+#
+#  chirality for residue 5 atoms:  CG NE HD2 HD3
+ &rst iat=73,79,77,78, &end
+#
+#  chirality for residue 5 atoms:  N C HA CB
+ &rst iat=66,88,69,70, &end
+#
+#  chirality for residue 6 atoms:  CA CG HB2 HB3
+ &rst iat=92,97,95,96, &end
+#
+#  chirality for residue 6 atoms:  N C HA CB
+ &rst iat=90,105,93,94, &end
+#
+#  chirality for residue 7 atoms:  CA CG HB2 HB3
+ &rst iat=109,114,112,113, &end
+#
+#  chirality for residue 7 atoms:  N C HA CB
+ &rst iat=107,117,110,111, &end
+#
+#  chirality for residue 8 atoms:  CA OG HB2 HB3
+ &rst iat=121,126,124,125, &end
+#
+#  chirality for residue 8 atoms:  N C HA CB
+ &rst iat=119,128,122,123, &end
+#
+#  chirality for residue 9 atoms:  N C HA2 HA3
+ &rst iat=130,135,133,134, &end
+#
+#  chirality for residue 10 atoms:  CA CG HB2 HB3
+ &rst iat=139,144,142,143, &end
+#
+#  chirality for residue 10 atoms:  N C HA CB
+ &rst iat=137,156,140,141, &end
+#
+#  chirality for residue 11 atoms:  CA CG HB2 HB3
+ &rst iat=160,165,163,164, &end
+#
+#  chirality for residue 11 atoms:  CB CD HG2 HG3
+ &rst iat=162,168,166,167, &end
+#
+#  chirality for residue 11 atoms:  N C HA CB
+ &rst iat=158,171,161,162, &end
+#
+#  chirality for residue 12 atoms:  CA CG1 CG2 HB
+ &rst iat=175,179,183,178, &end
+#
+#  chirality for residue 12 atoms:  N C HA CB
+ &rst iat=173,187,176,177, &end
+#
+#  chirality for residue 13 atoms:  CA CG HB2 HB3
+ &rst iat=191,196,194,195, &end
+#
+#  chirality for residue 13 atoms:  N C HA CB
+ &rst iat=189,204,192,193, &end
+#
+#  chirality for residue 14 atoms:  CA CG HB2 HB3
+ &rst iat=208,213,211,212, &end
+#
+#  chirality for residue 14 atoms:  N C HA CB
+ &rst iat=206,221,209,210, &end
+#
+#  chirality for residue 15 atoms:  CA CG HB2 HB3
+ &rst iat=225,230,228,229, &end
+#
+#  chirality for residue 15 atoms:  CB CD HG2 HG3
+ &rst iat=227,233,231,232, &end
+#
+#  chirality for residue 15 atoms:  N C HA CB
+ &rst iat=223,238,226,227, &end
+#
+#  chirality for residue 16 atoms:  CA CG HB2 HB3
+ &rst iat=242,247,245,246, &end
+#
+#  chirality for residue 16 atoms:  CB CD HG2 HG3
+ &rst iat=244,250,248,249, &end
+#
+#  chirality for residue 16 atoms:  CD NZ HE2 HE3
+ &rst iat=250,256,254,255, &end
+#
+#  chirality for residue 16 atoms:  CG CE HD2 HD3
+ &rst iat=247,253,251,252, &end
+#
+#  chirality for residue 16 atoms:  N C HA CB
+ &rst iat=240,260,243,244, &end
+#
+#  chirality for residue 17 atoms:  CA CG HB2 HB3
+ &rst iat=264,269,267,268, &end
+#
+#  chirality for residue 17 atoms:  CB CD1 CD2 HG
+ &rst iat=266,271,275,270, &end
+#
+#  chirality for residue 17 atoms:  N C HA CB
+ &rst iat=262,279,265,266, &end
+#
+#  chirality for residue 18 atoms:  CA CG1 CG2 HB
+ &rst iat=283,287,291,286, &end
+#
+#  chirality for residue 18 atoms:  N C HA CB
+ &rst iat=281,295,284,285, &end
+#
+#  chirality for residue 19 atoms:  CA CG HB2 HB3
+ &rst iat=299,304,302,303, &end
+#
+#  chirality for residue 19 atoms:  N C HA CB
+ &rst iat=297,315,300,301, &end
+#
+#  chirality for residue 20 atoms:  CA CG HB2 HB3
+ &rst iat=319,324,322,323, &end
+#
+#  chirality for residue 20 atoms:  N C HA CB
+ &rst iat=317,335,320,321, &end
+#
+#  chirality for residue 21 atoms:  N C HA CB
+ &rst iat=337,345,340,341, &end
+#
+#  chirality for residue 22 atoms:  CA CG HB2 HB3
+ &rst iat=349,354,352,353, &end
+#
+#  chirality for residue 22 atoms:  CB CD HG2 HG3
+ &rst iat=351,357,355,356, &end
+#
+#  chirality for residue 22 atoms:  N C HA CB
+ &rst iat=347,360,350,351, &end
+#
+#  chirality for residue 23 atoms:  CA CG HB2 HB3
+ &rst iat=364,369,367,368, &end
+#
+#  chirality for residue 23 atoms:  N C HA CB
+ &rst iat=362,372,365,366, &end
+#
+#  chirality for residue 24 atoms:  CA CG1 CG2 HB
+ &rst iat=376,380,384,379, &end
+#
+#  chirality for residue 24 atoms:  N C HA CB
+ &rst iat=374,388,377,378, &end
+#
+#  chirality for residue 25 atoms:  N C HA2 HA3
+ &rst iat=390,395,393,394, &end
+#
+#  chirality for residue 26 atoms:  CA OG HB2 HB3
+ &rst iat=399,404,402,403, &end
+#
+#  chirality for residue 26 atoms:  N C HA CB
+ &rst iat=397,406,400,401, &end
+#
+#  chirality for residue 27 atoms:  CA CG HB2 HB3
+ &rst iat=410,415,413,414, &end
+#
+#  chirality for residue 27 atoms:  N C HA CB
+ &rst iat=408,420,411,412, &end
+#
+#  chirality for residue 28 atoms:  CA CG HB2 HB3
+ &rst iat=424,429,427,428, &end
+#
+#  chirality for residue 28 atoms:  CB CD HG2 HG3
+ &rst iat=426,432,430,431, &end
+#
+#  chirality for residue 28 atoms:  CD NZ HE2 HE3
+ &rst iat=432,438,436,437, &end
+#
+#  chirality for residue 28 atoms:  CG CE HD2 HD3
+ &rst iat=429,435,433,434, &end
+#
+#  chirality for residue 28 atoms:  N C HA CB
+ &rst iat=422,442,425,426, &end
+#
+#  chirality for residue 29 atoms:  N C HA2 HA3
+ &rst iat=444,449,447,448, &end
+#
+#  chirality for residue 30 atoms:  N C HA CB
+ &rst iat=451,459,454,455, &end
+#
+#  chirality for residue 31 atoms:  CA CG2 CG1 HB
+ &rst iat=463,467,471,466, &end
+#
+#  chirality for residue 31 atoms:  CB CD1 HG12 HG13
+ &rst iat=465,474,472,473, &end
+#
+#  chirality for residue 31 atoms:  N C HA CB
+ &rst iat=461,478,464,465, &end
+#
+#  chirality for residue 32 atoms:  CA CG2 CG1 HB
+ &rst iat=482,486,490,485, &end
+#
+#  chirality for residue 32 atoms:  CB CD1 HG12 HG13
+ &rst iat=484,493,491,492, &end
+#
+#  chirality for residue 32 atoms:  N C HA CB
+ &rst iat=480,497,483,484, &end
+#
+#  chirality for residue 33 atoms:  N C HA2 HA3
+ &rst iat=499,504,502,503, &end
+#
+#  chirality for residue 34 atoms:  CA CG HB2 HB3
+ &rst iat=508,513,511,512, &end
+#
+#  chirality for residue 34 atoms:  CB CD1 CD2 HG
+ &rst iat=510,515,519,514, &end
+#
+#  chirality for residue 34 atoms:  N C HA CB
+ &rst iat=506,523,509,510, &end
+#
+#  chirality for residue 35 atoms:  CA CG HB2 HB3
+ &rst iat=527,532,530,531, &end
+#
+#  chirality for residue 35 atoms:  CB SD HG2 HG3
+ &rst iat=529,535,533,534, &end
+#
+#  chirality for residue 35 atoms:  N C HA CB
+ &rst iat=525,540,528,529, &end
+#
+#  chirality for residue 36 atoms:  CA CG1 CG2 HB
+ &rst iat=544,548,552,547, &end
+#
+#  chirality for residue 36 atoms:  N C HA CB
+ &rst iat=542,556,545,546, &end
+#
+#  chirality for residue 37 atoms:  N C HA2 HA3
+ &rst iat=558,563,561,562, &end
+#
+#  chirality for residue 38 atoms:  N C HA2 HA3
+ &rst iat=565,570,568,569, &end
+#
+#  chirality for residue 39 atoms:  CA CG1 CG2 HB
+ &rst iat=574,578,582,577, &end
+#
+#  chirality for residue 39 atoms:  N C HA CB
+ &rst iat=572,586,575,576, &end
+#
+#  chirality for residue 40 atoms:  CA CG1 CG2 HB
+ &rst iat=590,594,598,593, &end
+#
+#  chirality for residue 40 atoms:  N C HA CB
+ &rst iat=588,602,591,592, &end
+#
+#  chirality for residue 41 atoms:  CA CG2 CG1 HB
+ &rst iat=606,610,614,609, &end
+#
+#  chirality for residue 41 atoms:  CB CD1 HG12 HG13
+ &rst iat=608,617,615,616, &end
+#
+#  chirality for residue 41 atoms:  N C HA CB
+ &rst iat=604,621,607,608, &end
+#
+#  chirality for residue 42 atoms:  N C HA CB
+ &rst iat=623,631,626,627, &end
+#
+#  trans-omega constraint for residue 2
+ &rst iat=17,15,13,5, 
+   r1=150., r2=170., r3=190., r4=210., rk2 = 50., rk3=50.,  &end
+#
+#  trans-omega constraint for residue 3
+ &rst iat=33,31,29,17, &end
+#
+#  trans-omega constraint for residue 4
+ &rst iat=48,46,44,33, &end
+#
+#  trans-omega constraint for residue 5
+ &rst iat=68,66,64,48, &end
+#
+#  trans-omega constraint for residue 6
+ &rst iat=92,90,88,68, &end
+#
+#  trans-omega constraint for residue 7
+ &rst iat=109,107,105,92, &end
+#
+#  trans-omega constraint for residue 8
+ &rst iat=121,119,117,109, &end
+#
+#  trans-omega constraint for residue 9
+ &rst iat=132,130,128,121, &end
+#
+#  trans-omega constraint for residue 10
+ &rst iat=139,137,135,132, &end
+#
+#  trans-omega constraint for residue 11
+ &rst iat=160,158,156,139, &end
+#
+#  trans-omega constraint for residue 12
+ &rst iat=175,173,171,160, &end
+#
+#  trans-omega constraint for residue 13
+ &rst iat=191,189,187,175, &end
+#
+#  trans-omega constraint for residue 14
+ &rst iat=208,206,204,191, &end
+#
+#  trans-omega constraint for residue 15
+ &rst iat=225,223,221,208, &end
+#
+#  trans-omega constraint for residue 16
+ &rst iat=242,240,238,225, &end
+#
+#  trans-omega constraint for residue 17
+ &rst iat=264,262,260,242, &end
+#
+#  trans-omega constraint for residue 18
+ &rst iat=283,281,279,264, &end
+#
+#  trans-omega constraint for residue 19
+ &rst iat=299,297,295,283, &end
+#
+#  trans-omega constraint for residue 20
+ &rst iat=319,317,315,299, &end
+#
+#  trans-omega constraint for residue 21
+ &rst iat=339,337,335,319, &end
+#
+#  trans-omega constraint for residue 22
+ &rst iat=349,347,345,339, &end
+#
+#  trans-omega constraint for residue 23
+ &rst iat=364,362,360,349, &end
+#
+#  trans-omega constraint for residue 24
+ &rst iat=376,374,372,364, &end
+#
+#  trans-omega constraint for residue 25
+ &rst iat=392,390,388,376, &end
+#
+#  trans-omega constraint for residue 26
+ &rst iat=399,397,395,392, &end
+#
+#  trans-omega constraint for residue 27
+ &rst iat=410,408,406,399, &end
+#
+#  trans-omega constraint for residue 28
+ &rst iat=424,422,420,410, &end
+#
+#  trans-omega constraint for residue 29
+ &rst iat=446,444,442,424, &end
+#
+#  trans-omega constraint for residue 30
+ &rst iat=453,451,449,446, &end
+#
+#  trans-omega constraint for residue 31
+ &rst iat=463,461,459,453, &end
+#
+#  trans-omega constraint for residue 32
+ &rst iat=482,480,478,463, &end
+#
+#  trans-omega constraint for residue 33
+ &rst iat=501,499,497,482, &end
+#
+#  trans-omega constraint for residue 34
+ &rst iat=508,506,504,501, &end
+#
+#  trans-omega constraint for residue 35
+ &rst iat=527,525,523,508, &end
+#
+#  trans-omega constraint for residue 36
+ &rst iat=544,542,540,527, &end
+#
+#  trans-omega constraint for residue 37
+ &rst iat=560,558,556,544, &end
+#
+#  trans-omega constraint for residue 38
+ &rst iat=567,565,563,560, &end
+#
+#  trans-omega constraint for residue 39
+ &rst iat=574,572,570,567, &end
+#
+#  trans-omega constraint for residue 40
+ &rst iat=590,588,586,574, &end
+#
+#  trans-omega constraint for residue 41
+ &rst iat=606,604,602,590, &end
+#
+#  trans-omega constraint for residue 42
+ &rst iat=625,623,621,606, &end
