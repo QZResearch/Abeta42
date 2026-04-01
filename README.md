@@ -4,13 +4,12 @@
 If you find this work useful, please consider citing:
 
 ```
-@article{Zhu2026,
-  title = {N-terminal Chirality and Sequence Variations Modulate the Conformational Landscape of Amyloid-beta 42},
-  ISSN = {fake issn},
-  DOI = {fake doi},
-  number = {fake no},
-  author = {Zhu,  Qiang and Yu, Haibo},
-  year = {2026},
-  month = Mar
+@article{zhu2026n,
+  title={N-terminal Chirality and Sequence Variations Modulate the Conformational Landscape of Amyloid-beta 42},
+  author={Zhu, Qiang and Yu, Haibo},
+  journal={bioRxiv},
+  pages={2026--03},
+  year={2026},
+  publisher={Cold Spring Harbor Laboratory}
 }
 ```
