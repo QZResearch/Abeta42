@@ -1,0 +1,23 @@
+parm ../../../../abeta_linear.parm7
+##trajin ../T?/remd.287K.mdcrd
+trajin ../T2[1-9]/allT/remd.nc.1
+trajin ../T30/allT/remd.nc.1
+
+nativecontacts name NC1 \
+	:1-42@CA \
+	mindist byresidue \
+	out contact_summary.dat \
+	writecontacts native_contacts.dat \
+	resout contact_res.dat \
+	map mapout contact_map.gnu \
+	distance 10.0
+
+
+
+#	resout res.dat \
+#	resoffset 0 \
+#	distance 7.0 \
+#	map mapout resmap.gnu \
+#	skipnative 
+#	#byresidue 
+#	#writecontacts contacts.dat \
